@@ -42,3 +42,30 @@ const myFunction = function(){
 //pata karen kaise datatype
 console.log(typeof(bigNumber1));// if we don't define it previously then it will be undefined
 
+
+
+//***************************************************** */
+
+//memory management
+
+let myYoutubename = "hiteshchoudharydotcom";
+
+let anothername = myYoutubename;
+anothername = "chaiaurcode";
+
+console.log(myYoutubename);//here it will be hitesh
+console.log(anothername);//it will be chaiaurcode
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "hitesh@google.com";
+console.log(userOne.email);//hitesh@google.com
+console.log(userTwo.email);//hitesh@google.com
+
+
+//the static things are given by copy while the non primitive ones are given by references
